@@ -43,7 +43,7 @@ module.exports = {
       if (!prompt) {
         await message.reply("");
 api.sendMessage({ sticker: "387545578037993" }, event.threadID);
-api.sendMessage("🟢 𝗛𝖾𝗅𝗅𝗈 JE PEUX FAIRE QUOI POUR TOI AJOURD'HUI🫡🫡⁉️" , event.threadID);
+api.sendMessage("🟢YO, JE PEUX FAIRE QUOI POUR TOI AJOURD'HUI CAPI🫡🫡⁉️" , event.threadID);
 api.setMessageReaction("🟡", event.messageID, () => {}, true);
         return;
       }
@@ -51,7 +51,7 @@ api.setMessageReaction("🟡", event.messageID, () => {}, true);
       const senderInfo = await api.getUserInfo([senderID]);
       const senderName = senderInfo[senderID].name;
       const response = await axios.get(`https://api.kenliejugarap.com/freegpt4o8k/?question=${encodeURIComponent(prompt)}`);
-      const answer = `🟢 VOLDIGO ANOS ⚪ :\n\n${response.data.response} 🟡`;
+      const answer = `🟢 EUDDY DONNÉ⚪ :\n\n${response.data.response} 🟡`;
 api.setMessageReaction("🟢", event.messageID, () => {}, true);
 
       //apply const font to each letter in the answer
